@@ -61,9 +61,48 @@ header{
     background-color: #EE3124;
 }
 
+.text_1 {
+  animation: text1;
+}
+
+.text_2 {
+  animation: text2;
+}
+
+.text_1, .text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 100vh;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 100vh;
+  }
+}
+
+
+
 @media only screen and (max-width: 992px) {
   #changingText{
-    font-size: 20vw;
+    font-size: 19vw;
     transform: rotate(0deg);
     left: 0;
     position: relative;
@@ -76,5 +115,24 @@ header{
 
 .sectionInfo{
     font-size: 0.8rem;
+}
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 100vw;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 100vw;
+  }
 }
 }
