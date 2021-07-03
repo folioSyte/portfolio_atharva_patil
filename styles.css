@@ -1,0 +1,80 @@
+body{
+    background-color: #121212;
+    color: #fff;
+}
+
+#changingText{
+    font-size: 10vw;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    position: absolute;
+    right: 101%;
+    white-space: nowrap; 
+    opacity: 0.1;
+    text-transform: uppercase;
+}
+
+header{
+    min-height: 100vh;
+}
+
+.sectionHeading{
+    font-size: 3rem;
+}
+
+.sectionInfo{
+    font-size: 1.2rem;
+}
+
+#header{
+    min-height: 100vh;
+}
+
+.text-danger{
+    color: #EE3124!important;
+}
+
+.btn{
+    border-radius: 64px;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.btn-danger{
+    background-color: #EE3124;
+}
+
+.btn-outline-danger{
+    border-color: #EE3124;
+    color: #fff;
+}
+
+.btn-danger:hover{
+    background-color: #DB4437;
+    /* try fluid animation */
+}
+
+.btn-outline-danger:hover{
+    background-color: #EE3124;
+}
+
+@media only screen and (max-width: 992px) {
+  #changingText{
+    font-size: 20vw;
+    transform: rotate(0deg);
+    left: 0;
+    position: relative;
+    margin-bottom: -8%;
+}
+
+.sectionHeading{
+    font-size: 2.2rem;
+}
+
+.sectionInfo{
+    font-size: 0.8rem;
+}
+}
