@@ -3,6 +3,80 @@ body{
     color: #fff;
 }
 
+/*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
+
+#loader{
+  display: block;
+}
+
+#wrap{
+   display: none;
+}
+
+.spinner {
+  margin: 40vh auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 2vh;
+  height: 2vh;
+  background-color: #EE3124;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+#navbar {
+  position: fixed; 
+  top: -100%; 
+  width: 100%;
+  transition: top 0.5s;
+  z-index: 11;
+}
+
+.nav-link{
+  color: #121212!important;
+}
+
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none;
+}
+
+.navbar-toggler{
+  border: none!important;
+}
+
 #changingText{
     font-size: 10vw;
     transform: rotate(-90deg);
@@ -212,11 +286,10 @@ footer a:hover {
   color: #fff;
 }
 
-.selectDisable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    cursor: default;
+img {  
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
