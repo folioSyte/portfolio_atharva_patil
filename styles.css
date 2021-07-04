@@ -14,7 +14,7 @@ body{
     text-transform: uppercase;
 }
 
-header{
+header, section{
     min-height: 100vh;
 }
 
@@ -26,7 +26,7 @@ header{
     font-size: 1.2rem;
 }
 
-#header{
+.section{
     min-height: 100vh;
 }
 
@@ -135,4 +135,88 @@ header{
     width: 100vw;
   }
 }
+}
+
+#About{
+  background-image: url('Assets/images/gears.png');
+  background-size: cover;
+}
+
+#skills{
+  padding-top: 15vh;
+  position: relative;
+}
+
+#skills:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url('Assets/images/skillsCover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+#skillsContent {
+  position: relative;
+}
+
+.indiSkill {
+padding: 4vh;
+}
+
+.indiSkill p{
+  padding-top: 2vh;
+  font-weight: bold;
+}
+.indiSkill img{
+  height: 10vh;
+}
+
+#directContact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#directContact img{
+  height: 4vh;
+  margin: 1vh;
+}
+
+#socialContact img{
+  height: 8vh;
+  margin: 1vh;
+}
+
+#socialContact img:hover{
+  transform: translateY(-2vh);
+}
+
+#heart:hover{
+  color: #EE3124;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
 }
