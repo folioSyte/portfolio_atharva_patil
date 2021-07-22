@@ -1,265 +1,323 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="Assets/favicon/site.webmanifest">
-    <title>Atharva Patil: Portfolio</title>
-  </head>
-  <body onload="myFunction()">
 
-    <section id="loader" class="text-center">
-      <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-      <h4 class="pt-3"><b>LOADING</b></h4>
-    </section>
-<div id="wrap">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="Assets/favicon/site.webmanifest">
+  <title>Atharva Patil: Portfolio</title>
+</head>
+
+<body onload="myFunction()">
+
+  <section id="loader" class="text-center">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+    <h4 class="pt-3"><b>LOADING</b></h4>
+  </section>
+  <div id="wrap">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container ">
-    <div class="navbar-brand mb-0 h1"><a class="nav-link  text-danger" aria-current="page" href="#"><b>Atharva Patil</b></a></div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#About"><b>About</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#works"><b>Works</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#timeline"><b>Timeline</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#skills"><b>Skills</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#contact"><b>Contact</b></a>
-        </li>
-      </ul>
-      <div class="text-center">
-          <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-danger px-4"><b>My Resume</b></button></a>
+      <div class="container ">
+        <div class="navbar-brand mb-0 h1"><a class="nav-link  text-danger" aria-current="page" href="#"><b>Atharva
+              Patil</b></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#About"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#works"><b>Works</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#timeline"><b>Timeline</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#skills"><b>Skills</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact"><b>Contact</b></a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <a class="nav-link" aria-current="page"
+              href="https://drive.google.com/file/d/1DPvl0yO9Gr00rYgSmjaJPkKDZdLIuh1z/view" target="_blank"
+              rel="noopener noreferrer"><button type="button" class="btn btn-danger px-4"><b>My Resume</b></button></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
 
-    <h1 id="changingText" class="text-lg-end text-start"><span class="text_1">Designer.</span><span class="text_2">Analyst.</span><span class="text_3">Modeler.</span><span class="text_4">Engineer.</span></h1>
-  <header class="container">
-    <div class="row justify-content-around align-items-center p-2 section">
-    <div class="col-lg-5 ms-md-5">
-      <h4 class="text-danger">Hello!</h4>
-      <h1 class="sectionHeading"><b>I’m Atharva Patil,<br>mechanical engineer.</b></h1>
-      <h6 class="sectionInfo pb-3"><b>I provide professional-grade 3D mechanical design, documentation and product simulation efficiently.</b></h6>
-      <a type="button" href="#works" class="btn btn-danger btn-lg px-4"><b>My Works</b></a>
-      <a type="button" href="#contact" class="btn btn-outline-danger btn-lg px-4"><b>Let's Talk</b></a>
-    </div>
-    <div class="col-lg-4 align-self-start align-self-lg-center">
-      <img src="Assets/images/Atharva Patil Home.png" class="img-fluid" alt="Black Silhouette on Red Circular Background">    </div>
-  </div>    
-  </header>
-  <section class="container">
-    <div id="About" class="row justify-content-around align-items-center p-2 section text-md-start text-center">
-    <div  class="col-lg-6 ms-md-5">
-      <h1 class="sectionHeading text-danger"><b>About Me!</b></h1>
-      <div class="sectionInfo py-3">
-      <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisl quam, lobortis id quam et, auctor suscipit arcu. Fusce <span class="text-danger">faucibus</span> ut dui et consequat. Mauris ut risus neque. Etiam cursus pharetra quam eget finibus. Morbi lorem enim, <span class="text-danger">dapibus</span> at arcu nec, molestie viverra eros.</b></h6>
-<br>
-      <h6><b>Fusce id mi suscipit, rhoncus sem et, volutpat arcu. <span class="text-danger">Curabitur</span> nibh nisl, gravida sit amet neque eu, dapibus rutrum enim. Nam id turpis aliquet, ultrices tellus sit amet, vehicula ligula.</b></h6>
-    </div>
-    </div>
-    <div class="col-lg-4 p-5 align-self-start align-self-lg-center">
-      <img src="Assets/images/Athava Patil Own.png" class="img-fluid" alt="Atharva Patil">    </div>
-  </div>    
-  </section>
+    <h1 id="changingText" class="text-lg-end text-start"><span class="text_1">Designer.</span><span
+        class="text_2">Analyst.</span><span class="text_3">Modeler.</span><span class="text_4">Engineer.</span></h1>
+    <header class="container">
+      <div class="row justify-content-around align-items-center p-2 section">
+        <div class="col-lg-5 ms-md-5">
+          <h4 class="text-danger">Hello!</h4>
+          <h1 class="sectionHeading"><b>I’m Atharva Patil,<br>mechanical engineer.</b></h1>
+          <h6 class="sectionInfo pb-3"><b>I provide professional-grade 3D mechanical design, documentation and product
+              simulation efficiently.</b></h6>
+          <a type="button" href="#works" class="btn btn-danger btn-lg px-4"><b>My Works</b></a>
+          <a type="button" href="#contact" class="btn btn-outline-danger btn-lg px-4"><b>Let's Talk</b></a>
+        </div>
+        <div class="col-lg-4 align-self-start align-self-lg-center">
+          <img src="Assets/images/Atharva Patil Home.png" class="img-fluid"
+            alt="Black Silhouette on Red Circular Background">
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div id="About" class="row justify-content-around align-items-center p-2 section text-md-start text-center">
+        <div class="col-lg-6 ms-md-5">
+          <h1 class="sectionHeading text-danger"><b>About Me!</b></h1>
+          <div class="sectionInfo py-3">
+            <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisl quam, lobortis id quam et,
+                auctor suscipit arcu. Fusce <span class="text-danger">faucibus</span> ut dui et consequat. Mauris ut
+                risus neque. Etiam cursus pharetra quam eget finibus. Morbi lorem enim, <span
+                  class="text-danger">dapibus</span> at arcu nec, molestie viverra eros.</b></h6>
+            <br>
+            <h6><b>Fusce id mi suscipit, rhoncus sem et, volutpat arcu. <span class="text-danger">Curabitur</span> nibh
+                nisl, gravida sit amet neque eu, dapibus rutrum enim. Nam id turpis aliquet, ultrices tellus sit amet,
+                vehicula ligula.</b></h6>
+          </div>
+        </div>
+        <div class="col-lg-4 p-5 align-self-start align-self-lg-center">
+          <img src="Assets/images/Athava Patil Own.png" class="img-fluid" alt="Atharva Patil">
+        </div>
+      </div>
+    </section>
 
-<section id="works" class=" trial text-center">
-  <div class="triangle-up"></div>
-        <div class="inside">
-            <h4 class="text-danger mt-5 "><b>My Works</b></h4>
-      <h1 class="sectionHeading text-dark"><b>Recent works</b></h1>
-            <div class="tile-section">
-                <ul class="grid">
-                    <li>
-                        <div class="tile-box bg-img1">
-                            <div class="overlay">
-                                <p class="pro-description1 tile-txt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam quisquam
-                                    ea eos deleniti possimus pariatur porro vitae. Voluptatem voluptate dolore quisquam
-                                    maiores nisi, sed aliquam consequuntur sint voluptatum? Adipisci!
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tile-box bg-img2">
-                            <div class="overlay">
-                                <p class="pro-description1 tile-txt">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, itaque repellat
-                                    enim deleniti voluptatibus repudiandae autem officiis? Vero, nihil. Enim
-                                    repudiandae, repellendus corporis magnam laboriosam accusantium praesentium
-                                    dignissimos assumenda ut architecto aliquid. Assumenda eius consequatur omnis, a rem
-                                    illo quod.
-                                </p>
-                              </div>
-                            </div>
-                    </li>
-                    <li>
-                        <div class="tile-box bg-img2">
-                            <div class="overlay">
-                                <p class="pro-description1 tile-txt">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, itaque repellat
-                                    enim deleniti voluptatibus repudiandae autem officiis? Vero, nihil. Enim
-                                    repudiandae, repellendus corporis magnam laboriosam accusantium praesentium
-                                    dignissimos assumenda ut architecto aliquid. Assumenda eius consequatur omnis, a rem
-                                    illo quod.
-                                </p>
-                              </div>
-                            </div>
-                    </li>
-                    <li>
-                        <div class="tile-box bg-img1">
-                            <div class="overlay">
-                                <p class="pro-description1 tile-txt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam quisquam
-                                    ea eos deleniti possimus pariatur porro vitae. Voluptatem voluptate dolore quisquam
-                                    maiores nisi, sed aliquam consequuntur sint voluptatum? Adipisci!
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-</div>
-</section>
+    <section id="works" class=" trial text-center">
+      <div class="triangle-up"></div>
+      <div class="inside">
+        <h4 class="text-danger mt-5 "><b>My Works</b></h4>
+        <h1 class="sectionHeading text-dark"><b>Recent works</b></h1>
+        <div class="tile-section">
+          <ul class="grid">
+            <li>
+              <div class="tile-box bg-img1">
+                <div class="overlay">
+                  <div class="tile-txt">
+                    <h3><b>URDF Robotic Arm</b></h3>
+                    <hr>
+                    <p class="pro-description1">
+                      Used ROS and RVIZ for building a Simple Robotic Arm, learned about Its working, rigid body motion,
+                      degrees of freedom, robot links & joints, and understood the usage of ROS in real-world industrial
+                      applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tile-box bg-img2">
+                <div class="overlay">
+                  <div class="tile-txt">
+                    <h3><b>Nissan Leaf HVAC System</b></h3>
+                    <hr>
+                    <p class="pro-description1">
+                      Modeled numerical model of Nissan’s Leaf HVAC system. The model carried out on the Simulation Tool
+                      Scilab Xcos is based on the recently implemented HVAC system of the Car.HVAC’s purpose in a
+                      vehicle is to clean, cool, heat, regulate, ventilate, and dehumidify the air entering the cabin,
+                      depending on the operator’s inputs and electronic sensors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tile-box bg-img3">
+                <div class="overlay">
+                  <div class="tile-txt">
+                    <h3><b>KTM Duke 390 ABS Unit</b></h3>
+                    <hr>
+                    <p class="pro-description1">
+                      Modeled and simulated ABS numerical model of KTM DUKE 390 using Scilab and Xcos. I analyzed the
+                      factors such as stopping distance without ABS, stopping distance with ABS, stopping distance at
+                      various vehicle speeds, the Influence of vehicle mass on stopping distance, Studying brake
+                      pressure at different conditions, and achieving the slip coefficient.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tile-box bg-img4">
+                <div class="overlay">
+                  <div class="tile-txt">
+                    <h3><b>Technical Report on Battery Management System</b></h3>
+                    <hr>
+                    <p class="pro-description1">
+                      Worked on overview of common concepts for BMS hardware, starting with a collection of generic
+                      requirements, for which, later on, implementation considerations were taken as an aspect for the
+                      development of the sustainable environment by reducing the use of fossil fuel-consuming cars.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
 
-<section id="timeline" class="container py-5 text-lg-center text-start">
-  <h4 class="text-danger">My Journey</h4>
+    <section id="timeline" class="container py-5 text-lg-center text-start">
+      <h4 class="text-danger">My Journey</h4>
       <h1 class="sectionHeading mb-5"><b>Professional Timeline</b></h1>
-  <div class="timeline">
-  <div class="holder left">
-    <div class="timeline-content">
-      <h3 class="date">20th may, 2010</h3>
-                        <h5>Training Internship</h5>
-                        <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
-                        <h2 class="company-name">Verzeo Edutect</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
-                            exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
-                            saepe quisquam est cum expedita veniam et aliquam.</p></div>
-  </div>
-  <div class="holder right">
-    <div class="timeline-content">
-      <h3 class="date">20th may, 2010</h3>
-                        <h5>Training Internship</h5>
-                        <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
-                        <h2 class="company-name">Verzeo Edutect</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
-                            exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
-                            saepe quisquam est cum expedita veniam et aliquam.</p></div>
-  </div>
-  <div class="holder left">
-    <div class="timeline-content">
-      <h3 class="date">20th may, 2010</h3>
-                        <h5>Training Internship</h5>
-                        <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
-                        <h2 class="company-name">Verzeo Edutect</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
-                            exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
-                            saepe quisquam est cum expedita veniam et aliquam.</p></div>
-  </div>
-  <div class="holder right">
-    <div class="timeline-content">
-      <h3 class="date">20th may, 2010</h3>
-                        <h5>Training Internship</h5>
-                        <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
-                        <h2 class="company-name">Verzeo Edutect</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
-                            exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
-                            saepe quisquam est cum expedita veniam et aliquam.</p></div>
-  </div>
-  <div class="holder left">
-    <div class="timeline-content">
-      <h3 class="date">20th may, 2010</h3>
-                        <h5>Training Internship</h5>
-                        <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
-                        <h2 class="company-name">Verzeo Edutect</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
-                            exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
-                            saepe quisquam est cum expedita veniam et aliquam.</p></div>
-  </div>
-  <div class="holder right">
-    <div class="timeline-content">
-      <h3 class="date">20th may, 2010</h3>
-                        <h5>Training Internship</h5>
-                        <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
-                        <h2 class="company-name">Verzeo Edutect</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
-                            exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
-                            saepe quisquam est cum expedita veniam et aliquam.</p></div>
-  </div>
-</div>
-</section>
-
-  <section id="skills">
-    <div id="skillsContent" class="container text-center">
-    <h4 class="text-danger">Technical Skills!</h4>
-      <h1 class="sectionHeading"><b>Tricks of my Trade</b></h1>
-  <div class="row row-cols-sm-3 row-cols-2 p-5">
-    <div class="indiSkill col"><img src="Assets/icons/Modelling.png" class="img-fluid" alt="Modelling"><p>Modelling<br>SolidWorks | Inventor | fusion 360</p></div>
-    <div class="indiSkill col"><img src="Assets/icons/drafting.png" class="img-fluid" alt="Drafting"><p>Drafting<br>AutoCAD</p></div>
-    <div class="indiSkill col"><img src="Assets/icons/simulation.png" class="img-fluid" alt="Simulation"><p>Simulation<br>SolidWorks | Inventor | fusion 360</p></div>
-    <div class="indiSkill col"><img src="Assets/icons/programing.png" class="img-fluid" alt="Programming"><p>Programming<br>c | c++ | matlab</p></div>
-    <div class="indiSkill col"><img src="Assets/icons/management.png" class="img-fluid" alt="Project Management"><p>Project Management</p></div>
-    <div class="indiSkill col"><img src="Assets/icons/feedback.png" class="img-fluid" alt="Receptiveness to Feedback"><p>Receptiveness to Feedback</p></div>
-</div>
-    </div>
-  </section>
-  <section id="contact" class="container">
-    <div class="row justify-content-around align-items-center p-2 section">
-    <div class="col-lg-5 ms-md-5">
-      <h4 class="text-danger">Work Inquiry</h4>
-      <h1 class="sectionHeading"><b>Let's work together 
-and I'll give my best!</b></h1>
-      <h6 id="directContact" class="sectionInfo py-3"><b>
-        <a href="mailto:atharvampatil10@gmail.com" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/Mail.png" class="img-fluid" alt="Mail">atharvampatil10@gmail.com</a>
-        <br>
-        <a href="https://goo.gl/maps/tceT5nQiE9iVjVnb9" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/Location.png" class="img-fluid" alt="Location">Amravati, India</a>
-      </b></h6>
-      <div id="socialContact" class="mt-2">
-      <a href="https://www.linkedin.com/in/atharvampatil/" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/LinkedIn.png" class="img-fluid" alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/atharva.patil1/" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/Instagram.png" class="img-fluid" alt="Instagram"></a>
-      <a href="https://www.facebook.com/atharva.patil.124" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/Facebook.png" class="img-fluid" alt="Facebook"></a>
-      <a href="https://twitter.com/Atharvapatil01" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/Twitter.png" class="img-fluid" alt="Twitter"></a>
+      <div class="timelineWrap">
+        <div class="timeline">
+          <div class="holder left">
+            <div class="timeline-content">
+              <h3 class="date">June 2021</h3>
+              <h5>Internship</h5>
+              <h2 class="text-danger">MODEL-BASED DESIGN(MBD)</h2>
+              <h2 class="company-name">Decibels labs Pvt Ltd.</h2>
+              <p>Worked on projects like the simulation of vehicle resistive forces on the F1 car, KTM ABS, NISSAN HVAC
+                to emphasize and develop simulation sense towards Model-Based Design</p>
+            </div>
+          </div>
+          <div class="holder right">
+            <div class="timeline-content">
+              <h3 class="date">May 2020</h3>
+              <h5>Training Internship</h5>
+              <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
+              <h2 class="company-name">Verzeo EduTech</h2>
+              <p>Learnt about working of the HEV and worked upon improving battery management system, hence wrote a
+                technical report on the same.</p>
+            </div>
+          </div>
+          <div class="holder left">
+            <div class="timeline-content">
+              <h3 class="date">May 2020</h3>
+              <h5>Group Project</h5>
+              <h2 class="text-danger">Autodesk Competition Program)</h2>
+              <h2 class="company-name">MNIT, Jaipur</h2>
+              <p>It was a 2-day competition wherein they asked students to design and draft a 2-Pneumatic 6 Cylinder
+                Radial Engine in Autodesk Inventor, where I came in the top 5 among 100+ teams.</p>
+            </div>
+          </div>
+          <div class="holder right">
+            <div class="timeline-content">
+              <h3 class="date">Dec 19 - Sept 20 </h3>
+              <h5>Team Member</h5>
+              <h2 class="text-danger">SAE COLLEGIATE CLUB</h2>
+              <h2 class="company-name">MNIT, Jaipur</h2>
+              <p>We at the society of automotive engineers at MNIT venture to promote extensive engineering, designing
+                skills and fabrication dedicated to creating innovative solutions and advanced technologies in the field
+                of Automobiles.</p>
+            </div>
+          </div>
+          <div class="holder left">
+            <div class="timeline-content">
+              <h3 class="date">July 2019 - 2023(expected graduation)</h3>
+              <h5>Bachelor of Technology</h5>
+              <h2 class="text-danger">Mechanical Enginnering</h2>
+              <h2 class="company-name">
+                Malaviya National Institute of Technology Jaipur</h2>
+              <p>Ranked in the Top 2 percentile in JEE MAINS among 1.2 million Candidates </p>
+            </div>
+          </div>
+          <div class="holder right">
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2010</h3>
+              <h5>Training Internship</h5>
+              <h2 class="text-danger">Hybrid Electric Vechile(HEV)</h2>
+              <h2 class="company-name">Verzeo Edutect</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit omnis
+                exercitationem libero magnam! Maxime atque in libero, rerum repudiandae ipsam assumenda
+                saepe quisquam est cum expedita veniam et aliquam.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-6 align-self-start align-self-lg-center">
-      <img src="Assets/images/Red Car.png" class="img-fluid" alt="Red Car Background">    </div>
-  </div>    
-  </section>
-  <footer class="container-fluid px-3 my-3 text-center">
-    <div class="row justify-content-around">
-    <div class="col-md-3  text-md-start"><b>
-      Copyright &copy; 2021 Atharva Patil.</b>
-    </div>
-    <div class="col-md-3 "><b>
-      Handcrafted with</b> <span id="heart">&hearts;</span>
-    </div>
-    <div class="col-md-3 text-md-end"><b>
-      <a href="https://foliosyte.com/" target="_blank" rel="noopener noreferrer">Proudly by folioSyte Team</a></b>
-    </div>
+    </section>
+
+    <section id="skills">
+      <div id="skillsContent" class="container text-center">
+        <h4 class="text-danger">Technical Skills!</h4>
+        <h1 class="sectionHeading"><b>Tricks of my Trade</b></h1>
+        <div class="row row-cols-sm-3 row-cols-2 p-5">
+          <div class="indiSkill col"><img src="Assets/icons/Modelling.png" class="img-fluid" alt="Modelling">
+            <p>Modelling<br>SolidWorks | Inventor | fusion 360</p>
+          </div>
+          <div class="indiSkill col"><img src="Assets/icons/drafting.png" class="img-fluid" alt="Drafting">
+            <p>Drafting<br>AutoCAD</p>
+          </div>
+          <div class="indiSkill col"><img src="Assets/icons/simulation.png" class="img-fluid" alt="Simulation">
+            <p>Simulation<br>SolidWorks | Inventor | fusion 360</p>
+          </div>
+          <div class="indiSkill col"><img src="Assets/icons/programing.png" class="img-fluid" alt="Programming">
+            <p>Programming<br>c | c++ | matlab</p>
+          </div>
+          <div class="indiSkill col"><img src="Assets/icons/management.png" class="img-fluid" alt="Project Management">
+            <p>Project Management</p>
+          </div>
+          <div class="indiSkill col"><img src="Assets/icons/feedback.png" class="img-fluid"
+              alt="Receptiveness to Feedback">
+            <p>Receptiveness to Feedback</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container">
+      <div class="row justify-content-around align-items-center p-2 section">
+        <div class="col-lg-5 ms-md-5">
+          <h4 class="text-danger">Work Inquiry</h4>
+          <h1 class="sectionHeading"><b>Let's work together
+              and I'll give my best!</b></h1>
+          <h6 id="directContact" class="sectionInfo py-3"><b>
+              <a href="mailto:atharvampatil10@gmail.com" target="_blank" rel="noopener noreferrer"><img
+                  src="Assets/icons/Mail.png" class="img-fluid" alt="Mail">atharvampatil10@gmail.com</a>
+              <br>
+              <a href="https://goo.gl/maps/tceT5nQiE9iVjVnb9" target="_blank" rel="noopener noreferrer"><img
+                  src="Assets/icons/Location.png" class="img-fluid" alt="Location">Amravati, India</a>
+            </b></h6>
+          <div id="socialContact" class="mt-2">
+            <a href="https://www.linkedin.com/in/atharvampatil/" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/icons/LinkedIn.png" class="img-fluid" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/atharva.patil1/" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/icons/Instagram.png" class="img-fluid" alt="Instagram"></a>
+            <a href="https://www.facebook.com/atharva.patil.124" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/icons/Facebook.png" class="img-fluid" alt="Facebook"></a>
+            <a href="https://twitter.com/Atharvapatil01" target="_blank" rel="noopener noreferrer"><img
+                src="Assets/icons/Twitter.png" class="img-fluid" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-start align-self-lg-center">
+          <img src="Assets/images/Red Car.png" class="img-fluid" alt="Red Car Background">
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid px-3 my-3 text-center">
+      <div class="row justify-content-around">
+        <div class="col-md-3  text-md-start"><b>
+            Copyright &copy; 2021 Atharva Patil.</b>
+        </div>
+        <div class="col-md-3 "><b>
+            Handcrafted with</b> <span id="heart">&hearts;</span>
+        </div>
+        <div class="col-md-3 text-md-end"><b>
+            <a href="https://foliosyte.com/" target="_blank" rel="noopener noreferrer">Proudly by folioSyte Team</a></b>
+        </div>
+      </div>
+    </footer>
   </div>
-  </footer>
-  </div>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
