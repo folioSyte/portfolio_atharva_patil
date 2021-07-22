@@ -7,8 +7,6 @@ body{
     color: #fff;
 }
 
-/*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
-
 #loader{
   display: block;
 }
@@ -445,7 +443,7 @@ img {
   }
 
   .timeline {
-  width: 100vw;
+  width: 100%;
 }
 
   .holder {
