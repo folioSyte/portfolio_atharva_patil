@@ -147,7 +147,15 @@ header, section{
   animation: text2;
 }
 
-.text_1, .text_2 {
+.text_3 {
+  animation: text3;
+}
+
+.text_4 {
+  animation: text4;
+}
+
+.text_1, .text_2, .text_3, .text_4 {
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
@@ -157,25 +165,42 @@ header, section{
   animation-iteration-count: infinite;
 }
 
+@keyframes text1 {
+  0%, 25%, 50%, 75%, 100% {
+    width: 0;
+  }
+  5%, 20% {
+    width: 100vh;
+  }
+}
+
 @keyframes text2 {
-  0%, 50%, 100% {
+  0%, 25%, 50%, 75%, 100% {
     width: 0;
   }
   
-  60%, 90% {
+  30%, 45% {
     width: 100vh;
   }
 }
 
-@keyframes text1 {
-  0%, 50%, 100% {
+@keyframes text3 {
+  0%, 25%, 50%, 75%, 100% {
     width: 0;
   }
-  10%, 40% {
+  55%, 70% {
     width: 100vh;
   }
 }
 
+@keyframes text4 {
+  0%, 25%, 50%, 75%, 100% {
+    width: 0;
+  }
+  80%, 95% {
+    width: 100vh;
+  }
+}
 
 
 @media only screen and (max-width: 992px) {
@@ -199,23 +224,45 @@ header, section{
     font-size: 0.8rem;
 }
 
-@keyframes text2 {
-  0%, 50%, 100% {
+@keyframes text1 {
+  0%, 25%, 50%, 75%, 100% {
     width: 0;
   }
-  
-  60%, 90% {
+  5%, 20% {
     width: 100vw;
   }
 }
 
-@keyframes text1 {
-  0%, 50%, 100% {
+@keyframes text2 {
+  0%, 25%, 50%, 75%, 100% {
     width: 0;
   }
-  10%, 40% {
+  
+  30%, 45% {
     width: 100vw;
   }
+}
+
+@keyframes text3 {
+  0%, 25%, 50%, 75%, 100% {
+    width: 0;
+  }
+  55%, 70% {
+    width: 100vw;
+  }
+}
+
+@keyframes text4 {
+  0%, 25%, 50%, 75%, 100% {
+    width: 0;
+  }
+  80%, 95% {
+    width: 100vw;
+  }
+}
+
+.indiSkill{
+  font-size: 0.8rem;
 }
 }
 
@@ -421,5 +468,384 @@ img {
 
 .timeline-content {
   top: 0rem;
+}
+}
+
+.trial{
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background-color:#121212;
+  height: fit-content;
+ justify-content: center;
+}
+
+.inside{
+    
+  width: 100%;
+   background-color: white;
+   position: relative;
+   padding: 10px;
+   margin-top: 2%;
+   margin-bottom: 1%;
+   text-align: center;
+   overflow: hidden;
+   height: fit-content;
+ }
+   .inside-text {
+    font-size: larger;
+    
+    padding: 2%;
+    font-weight: bolder;
+  }
+  .tile-section{
+    max-width: 100%;/*alert*/
+    margin: 0 auto;
+    padding:6% 2%;
+  }
+  .grid{
+
+   
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+    
+  }
+  
+.grid li{
+/* ht and width of 1 box in which project image will come */
+  width: 19rem;
+  height: 25rem;
+  
+  display: inline-block;
+  margin: 40px;
+  margin-bottom: 5%;
+  padding: 3%;
+  margin: auto;
+  
+
+}
+/* individual box */
+.tile-box{
+  width: 100%;
+  height: 100%;
+  /* width: auto;
+  height: auto; */
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.4s;
+ 
+
+ 
+  
+}
+
+.tile-box:hover{
+  transform: scale(1.05);
+  background-size: 110%;
+ }
+.bg-img1{
+  background-image: url("/Assets/images/carShort.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  background-color:black ;
+} 
+/* for overlay text */
+.tile-txt{
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  position: relative;
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ 
+  margin: auto;
+  padding: 2%;
+  
+  
+}
+/* for overlay effect for the black shade and text on hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:black;
+  border-radius: 10px;
+}
+.tile-box:hover .overlay {
+  opacity: 0.7;
+}
+.bg-img2{
+  background-image: url("/Assets/images/car2Short.jpg" );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: red;
+  display: block;
+}
+
+
+/* this is for the click to read more section */
+label {
+  display: block;
+ margin: auto;
+
+  padding: 0.5em;
+  text-align: center;
+  
+  color:black;
+  background-color:white;
+  font-size: large;
+}
+
+label::before {
+  
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, white 50%, transparent 50%);
+  
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.6s smooth;
+  color: #FFF;
+  
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+#toggle:checked ~ #expand {
+  height:100%;
+  
+}
+
+
+#toggle{
+  display: none;
+  
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 6.25px solid transparent;
+	border-right: 6.25px solid transparent;
+	border-bottom: 20px solid white;
+  text-align: center;
+  vertical-align: top;
+  margin: auto;
+  position: absolute;
+  padding-top:12px;
+}
+
+/********** for desktop because min-width is used  ********************/
+/* this is min width means below 768px(for phone) above code will run and above 768px(medium and large screen) below code will run  */
+/* so add your desktop code in this media query and mobile code outside the media query ,change the 768px as you want */
+@media only screen and (min-width: 600px) { 
+
+
+  .trial{
+    width: 100%;
+    height: 100%;
+    background-color:#121212;
+    display:flex;
+   justify-content: center;
+}
+  /* inner div */
+  .inside{
+    
+   width: 85%;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    overflow: hidden;
+  }
+  .inside-text {
+    font-size: larger;
+    
+    padding: 2%;
+    font-weight: bolder;
+  }
+    
+   /* in this section the project tiles are their */
+  .tile-section{
+    max-width: 100%;/*alert*/
+    margin: 0 auto;
+    padding:6% 2%;
+  }
+  .grid{
+
+   
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+    
+  }
+  
+.grid li{
+/* ht and width of 1 box in which project image will come */
+  width: 480px;
+  height: 480px;
+  display: inline-block;
+  margin: 40px;
+  margin-bottom: 5%;
+
+}
+/* individual box */
+.tile-box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.4s;
+
+ 
+  
+}
+
+.tile-box:hover{
+  transform: scale(1.05);
+  background-size: 110%;
+ }
+.bg-img1{
+  background-image: url("/Assets/images/carShort.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  background-color:black ;
+} 
+/* for overlay text */
+.tile-txt{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  position: relative;
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ 
+  margin: auto;
+  padding: 2%;
+  
+  
+}
+/* for overlay effect for the black shade and text on hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:black;
+  border-radius: 10px;
+}
+.tile-box:hover .overlay {
+  opacity: 0.7;
+}
+.bg-img2{
+  background-image: url("/Assets/images/car2Short.jpg" );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: red;
+  display: block;
+}
+
+
+/* this is for the click to read more section */
+label {
+  display: block;
+ margin: auto;
+
+  padding: 0.5em;
+  text-align: center;
+  
+  color:black;
+  background-color:white;
+  font-size: large;
+}
+
+label::before {
+  
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, white 50%, transparent 50%);
+  
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.6s smooth;
+  color: #FFF;
+  
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+#toggle:checked ~ #expand {
+  height:100%;
+  
+}
+
+
+#toggle{
+  display: none;
+  
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 20px solid white;
+  text-align: center;
+  vertical-align: top;
+  margin: auto;
+  position: absolute;
+  padding-top:12px;
+
 }
 }
