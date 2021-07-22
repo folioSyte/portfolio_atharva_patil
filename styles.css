@@ -64,7 +64,7 @@ body{
   top: -100%; 
   width: 100%;
   transition: top 0.5s;
-  z-index: 11;
+  z-index: 11!important;
 }
 
 .nav-link{
